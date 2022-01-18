@@ -1,0 +1,55 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>해야 할 일 메모앱</title>
+        <link
+            rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <h2>To Do List</h2>
+            <button id="btnAddProject">프로젝트 추가</button>
+            <div id="projects">
+                <ul id="main">
+                    <li>
+                        <a href="#personal">Personal</a>
+                    </li>
+                    <li><a href="#work">Work</a></li>
+                </ul>
+                <ol id="personal">
+                    <li><input type="checkbox" />Doctor appointment</li>
+                    <li><input type="checkbox" />Call the plumber</li>
+                </ol>
+                <ol id="work">
+                    <li><input type="checkbox" />Complete</li>
+                    <li><input type="checkbox" />meeting</li>
+                </ol>
+            </div>
+            <button id="btnAddTodo">일정추가</button>
+            <div
+                id="project-dialog"
+                style="display: none"
+                title="프로젝트 추가"
+            >
+                <label for="new-project">Project name</label>
+                <input id="new-project" type="text" />
+            </div>
+            <div id="todo-dialog" style="display: none" title="일정 추가">
+                <!-- <label for="new-todo">일정 name</label> -->
+                <input id="new-todo" type="text" />
+            </div>
+        </div>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

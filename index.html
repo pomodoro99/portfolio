@@ -1,0 +1,60 @@
+<!-- @format -->
+<!-- 수정 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body style="text-align: center">
+        <h1>환율 변환 웹페이지</h1>
+        <p>!!!!!!!!!!!!</p>
+        <div class="exchange-box">
+            <div class="dropdown">
+                <button
+                    onclick="toggleFunction()"
+                    class="dropbtn"
+                    id="from-button"
+                >
+                    USD
+                </button>
+                <div class="dropdown-content" id="from-currency-list">
+                    <a href="#">USD</a>
+                    <a href="#">KRW</a>
+                    <a href="#">VND</a>
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="number" id="from-input" onkeyup="convert()" />
+            </div>
+            <div class="input-display">
+                <div class="korean-area" id="from-korean"></div>
+                <div class="unit" id="from-unit">달러</div>
+            </div>
+        </div>
+        <h1>=</h1>
+        <div class="exchange-box">
+            <div class="dropdown">
+                <button class="dropbtn" id="to-button">USD</button>
+                <div class="dropdown-content" id="to-currency-list">
+                    <a href="#">USD</a>
+                    <a href="#">KRW</a>
+                    <a href="#">VND</a>
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="number" id="to-input" onkeyup="convert()" />
+            </div>
+            <div class="input-display">
+                <div class="korean-area" id="to-korean"></div>
+                <div class="unit" id="to-unit">달러</div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
